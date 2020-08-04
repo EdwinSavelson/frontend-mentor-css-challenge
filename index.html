@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="CSS/styles.css">
@@ -11,73 +11,76 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Fylo data storage component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
 
 <body>
 
 
-<div class="overall-container">
+  <div class="overall-container">
 
 
-  <div class="logo-container">
+    <div class="logo-container">
 
 
-    <img class="logo" src="images/logo.svg" alt="logo">
-    <div class="small-logo-container">
+      <img class="logo" src="images/logo.svg" alt="logo">
+      <div class="small-logo-container">
 
-      <div class="icons">
-        <img src="images/icon-document.svg" alt="document">
-      </div>
+        <div class="icons">
+          <img src="images/icon-document.svg" alt="document">
+        </div>
 
-      <div class="icons">
-        <img class="folder" src="images/icon-folder.svg" alt="folder">
-      </div>
+        <div class="icons">
+          <img class="folder" src="images/icon-folder.svg" alt="folder">
+        </div>
 
-      <div class="icons">
-        <img class="upload" src="images/icon-upload.svg" alt="upload">
+        <div class="icons">
+          <img class="upload" src="images/icon-upload.svg" alt="upload">
+        </div>
+
       </div>
 
     </div>
 
-  </div>
 
 
 
+    <div class="loading-bar-container">
 
-<div class="loading-bar-container">
+      <div class="above-bar">
 
-    <div class="used">
-      You’ve used <span class="bolded">815</span> GB of your storage
-    </div>
+        <div class="used">
+          You’ve used <span class="bolded">815</span> GB of your storage
+        </div>
 
-
-    <div class="loading-bar-background">
-      <div class="loading-bar">
-        <div class="loading-bar-circle">
-
+        <div class="left left-bottom-right">
+          <span class="number">185 </span>
+          <span class="small-text">GB Left</span>
         </div>
       </div>
+
+      <div class="loading-bar-background">
+        <div class="loading-bar">
+          <div class="loading-bar-circle">
+
+          </div>
+        </div>
+      </div>
+
+
+      <span class="low-load">0 GB</span>
+      <span class="high-load">1000GB</span>
     </div>
 
 
-    <span class="low-load">0 GB</span>
-    <span class="high-load">1000GB</span>
+
   </div>
 
-  <div class="left">
-    <span class="number">185 </span>
-    <span class="small-text">GB Left</span>
-  </div>
 
-</div>
-
-
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Edwin Savelson</a>.
-  </div>
+  </div> -->
 </body>
 
 </html>
