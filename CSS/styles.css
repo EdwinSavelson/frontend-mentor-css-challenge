@@ -1,50 +1,48 @@
-body{
+body {
   background-image: url("../images/bg-desktop.svg");
-  background-attachment:fixed;
-    background-repeat: no-repeat;
-      background-size: cover;
-    font-family: 'Raleway', sans-serif;
-    color: white;
-    text-align: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
 }
 
-.background-img{
+.background-img {
   /* Set rules to fill background */
- min-height: 100%;
- min-width: 1024px;
-
- /* Set up proportionate scaling */
- width: 100%;
- height: auto;
-
- /* Set up positioning */
- position: fixed;
- top: 0;
- left: 0;
+  min-height: 100%;
+  min-width: 1024px;
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
-.overall-container{
-
+.overall-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
 }
 
 .logo-container {
-  display: inline-block;
+  /* display: inline-block; */
   text-align: left;
-  margin: auto;
+  /* margin: auto; */
   margin-top: 100px;
   padding: 30px 40px 30px 30px;
   background-color: hsl(232, 54%, 25%);
-
   border-radius: 10px 100px 10px 10px;
 }
 
-.logo{
+.logo {
   margin-right: 100px;
   margin-bottom: 20px;
 }
 
-
-.icons{
+.icons {
   background-color: hsl(229, 57%, 11%);
   border-radius: 7px;
   padding: 10px;
@@ -54,36 +52,47 @@ body{
   float: left;
   margin: 5px;
 }
-.icons img{
+
+.icons img {
   position: relative;
 }
 
-.upload{
+.upload {
   padding-top: 4px;
 }
-.folder{
-  padding-top:2px;
+
+.folder {
+  padding-top: 2px;
 }
-.small-logo{
+
+.small-logo {
   background-color: hsl(229, 57%, 11%);
   border-radius: 7px;
   padding: 10px;
 }
 
-.loading-bar-container{
-
+.loading-bar-container {
   background-color: hsl(232, 54%, 25%);
-  display: inline-block;
-  width: 50%;
-  margin: 50px 50px 0px;
+  /* display: inline-block; */
+  width: 40%;
+  margin: auto 50px 0px;
   padding: 30px 25px 30px;
   border-radius: 10px;
 }
-.bolded{
+
+.used {
+  font-weight: 400;
+}
+
+.bolded {
   font-weight: bold;
 }
 
-.loading-bar-background{
+.above-bar {
+  display: flex;
+}
+
+.loading-bar-background {
   width: 90%;
   height: 10px;
   border-radius: 10px;
@@ -94,7 +103,7 @@ body{
   background-color: hsl(229, 57%, 11%);
 }
 
-.loading-bar{
+.loading-bar {
   border-radius: 10px;
   float: left;
   width: 85%;
@@ -102,8 +111,8 @@ body{
   background-image: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
 }
 
-.loading-bar-circle{
-  float:right;
+.loading-bar-circle {
+  float: right;
   border-radius: 10px;
   width: 10px;
   height: 10px;
@@ -112,36 +121,56 @@ body{
   margin-right: 1px;
 }
 
-.low-load{
+.low-load {
   float: left;
   margin-left: 10px;
 }
-.high-load{
+
+.high-load {
   float: right;
   margin-right: 10px;
 }
 
-.left{
+.left {
   color: black;
   background-color: white;
-  padding: 40px;
-  position: absolute;
+  padding: 20px;
+  margin-top: -20%;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  right: 0px;
 }
-.number{
+
+.left-bottom-right::before{
+  content: "";
+  display: block;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 24px solid #fff;
+  border-top: 12px solid #fff;
+  border-bottom: 20px solid transparent;
+  right: 0px;
+  bottom: -24px;
+}
+
+.number {
   font-weight: 700;
   font-size: 2rem;
 }
-.small-text{
+
+.small-text {
   color: grey;
   display: inline-block;
   font-weight: bold;
   letter-spacing: 1px;
 }
+
 .attribution {
+  margin-top: 20px;
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
-
-}
+.attribution a {}
